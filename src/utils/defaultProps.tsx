@@ -77,6 +77,7 @@ type PreviewDefaultProps = {
   AvatarBadge?: PropsWithForm<AvatarBadgeProps>
   AvatarGroup?: PropsWithForm<Omit<AvatarGroupProps, 'children'>>
   Avatar?: PropsWithForm<AvatarProps>
+  Card?: PropsWithForm<BoxProps>
   Checkbox?: PropsWithForm<CheckboxProps>
   Link?: PropsWithForm<LinkProps>
   Spinner?: PropsWithForm<SpinnerProps>

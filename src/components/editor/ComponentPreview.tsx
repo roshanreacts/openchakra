@@ -118,6 +118,15 @@ const ComponentPreview: React.FC<{
         />
       )
     // More complex components
+    case 'Card':
+      return (
+        <WithChildrenPreviewContainer
+          enableVisualHelper
+          component={component}
+          type="Card"
+          {...forwardedProps}
+        />
+      )
     case 'InputRightElement':
       return <InputRightElementPreview component={component} />
     case 'InputLeftElement':

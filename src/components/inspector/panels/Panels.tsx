@@ -5,6 +5,7 @@ import BadgePanel from '~components/inspector/panels/components/BadgePanel'
 import IconPanel from '~components/inspector/panels/components/IconPanel'
 import ImagePanel from '~components/inspector/panels/components/ImagePanel'
 import BoxPanel from '~components/inspector/panels/components/BoxPanel'
+import CardPanel from '~components/inspector/panels/components/CardPanel'
 import ChildrenControl from '~components/inspector/controls/ChildrenControl'
 import AvatarPanel from '~components/inspector/panels/components/AvatarPanel'
 import AvatarGroupPanel from '~components/inspector/panels/components/AvatarGroupPanel'
@@ -64,6 +65,7 @@ const Panels: React.FC<{ component: IComponent; isRoot: boolean }> = ({
       {type === 'Button' && <ButtonPanel />}
       {type === 'Checkbox' && <CheckboxPanel />}
       {type === 'Box' && <BoxPanel />}
+      {type === 'Card' && <CardPanel />}
       {type === 'Badge' && <BadgePanel />}
       {type === 'Image' && <ImagePanel />}
       {type === 'Icon' && <IconPanel />}
